@@ -1,0 +1,43 @@
+.sec-dropdown {
+	position: relative !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	background-color: transparent !important;
+
+	background: url(assets/img/dropdown.html);
+	background-size: cover;
+	background-position: bottom;
+	margin-top: 5rem;
+	height: 350px;
+}
+
+.sec-dropdown::before {
+	position: absolute;
+	content: '';
+	background: url(assets/img/befo-dropdown.html);
+	background-size: cover;
+	background-position: bottom;
+	width: 100%;
+	height: 30px;
+	top: -9px;
+}
+
+.menu-our-work .ux-menu-link__text {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 25.6px;
+	color: white !important;
+}
+.sec-dropdown .col-inner.text-left {
+	padding: 0 50px;
+}
+.nav-dropdown {
+	background-color: transparent !important;
+}
+.nav-dropdown-has-border .nav-dropdown {
+	border: none !important;
+}
+.nav-dropdown-has-shadow .nav-dropdown {
+	box-shadow: none !important;
+}

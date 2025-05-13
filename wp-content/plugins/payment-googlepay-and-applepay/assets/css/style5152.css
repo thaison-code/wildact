@@ -1,0 +1,165 @@
+:root {
+    --primary-color: rgba(44, 146, 69, 1);
+}
+
+*, :after, :before, html {
+    box-sizing: border-box;
+}
+
+apple-pay-button {
+    --apple-pay-button-width-default: 0;
+    --apple-pay-button-width: 100px;
+    --apple-pay-button-height: auto;
+    --apple-pay-button-border-radius: 4px;
+    --apple-pay-button-padding: 5px 24px;
+    width: 188px;
+    padding-right: 50px;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.mb-1 {
+    margin-bottom: .25rem !important;
+}
+
+#donationForm .form-wrap-input {
+    width: 100%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .4375rem .75rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.4285714286;
+    background-clip: padding-box;
+    border: 1px solid #dce1e7 !important;
+    box-shadow: 0 1px 1px rgba(24,36,51, 0.06);
+    border-radius: 6px !important;
+    transition: border-color .15sease-in-out, box-shadow .15sease-in-out;
+    margin-bottom: 0 !important;
+}
+
+.form-selectgroup {
+    display: inline-flex;
+    margin: 0 -.5rem -.5rem 0;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.form-selectgroup.style-border-around {
+    border: 1px solid var(--primary-color);
+    padding: .25rem;
+    border-radius: 5px;
+}
+
+
+/* .form-selectgroup .form-selectgroup-item {
+    margin: 0 .5rem 0 0;
+} */
+
+.form-selectgroup-item {
+    display: block;
+    position: relative;
+}
+
+.form-selectgroup-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form-selectgroup-label {
+    position: relative;
+    display: block;
+    min-width: calc(1.4285714286em + .875rem + 2px);
+    margin: 0;
+    padding: .4375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0e0e0e;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid #dce1e7 !important;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(24,36,51, 0.06);
+    transition: border-color .3s, background .3s, color .3s;
+}
+
+/* .form-selectgroup.style-border-around .form-selectgroup-input:checked+.form-selectgroup-label {
+
+} */
+
+.form-selectgroup.style-border-around .form-selectgroup-label {
+    background-color: transparent;
+    color: #fff;
+    border-width: 0;
+}
+
+.form-selectgroup-input:checked+.form-selectgroup-label {
+    z-index: 1;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+#donationForm{
+	/*width: max-content;*/
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.27);
+    padding: 10px;
+    border-radius: 12px;
+}
+#donationForm .fullname {
+    display: flex;
+    gap: 20px;
+}
+
+#donationForm .fullname .form-control {
+    width: calc(50% - 10px);
+}
+
+.form-dark .form-control {
+    background-color: transparent;
+    color: #fff;
+}
+
+.wrap-btn-payment {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpay-button {
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.apple-pay-btn {
+    min-width: 100px !important;
+    width: 150px !important;
+}
+
+#applepay-container {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .wrap-form-donate{
+            height: 500px !important;
+    overflow: auto;
+    }
+}

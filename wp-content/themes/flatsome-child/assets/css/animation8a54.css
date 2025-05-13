@@ -1,0 +1,458 @@
+/* Form */
+.css-text-blog .post-title.is-large{
+    height: 85px;
+    	 display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+} 
+.col-cf7 .contact-form-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
+	margin: auto;
+}
+
+.col-cf7 .form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.col-cf7 .full-width {
+	grid-column: span 3;
+}
+
+.col-cf7 input,
+.col-cf7 select,
+.col-cf7 textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.col-cf7 input::placeholder,
+.col-cf7 textarea::placeholder {
+	color: #aaa;
+}
+
+.col-cf7 [submit] {
+	background-color: #2e8b57;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.col-cf7 [submit]:hover {
+	background-color: #276846;
+}
+
+.hover-bg-text:hover .box-text-inner{
+	    background: white !important;
+    border-radius: 8px;
+}
+.hover-bg-text:hover .box-text-inner h4{
+	    color: black !important;
+    padding: 10px;
+}
+/* Home Animation */
+.col-img-text-animation:hover .text-title-home-out-core h3,
+.row-border-outcore:hover .text-title-home-out-core h3,
+.imagebox-animation:hover .text-img-home-out-core h4,
+.blog-animation:hover .box-text.text-left h5 a {
+	text-decoration: underline;
+}
+.imagebox-animation:hover .box-text.text-left{
+	background:white;
+}
+.imagebox-animation:hover .box-text.text-left h4{
+	color:black !important;
+}
+.imagebox-animation:hover .box-text.text-left p{
+	color:black !important;
+}
+/* From Uiverse.io by alshahwan */
+.button-animation,
+.box-blog-post .box-text.text-left .button {
+	background-image: url('../img/right-arrow.svg');
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	background-size: 0; /* Ẩn icon ban đầu */
+	transition: background-size 0s, background-position 0.3s ease-in-out,
+		background-color 0.3s;
+	position: relative;
+	padding: 0 40px;
+	font-size: 17px;
+
+	border-radius: 0.4em;
+	display: inline-block;
+	overflow: hidden;
+}
+.box-blog-post .box-text.text-left .button {
+	padding: 0 40px !important;
+}
+.button-animation span {
+	margin: 0;
+	padding: 0;
+	transition: transform 0.3s ease-in-out;
+	position: relative;
+	display: inline-block;
+}
+
+.button-animation:hover,
+.box-blog-post .box-text.text-left .button:hover {
+	background-color: var(--fs-color-primary);
+	background-size: 20px; /* Hiện icon */
+	background-position: right 10px center;
+	box-shadow: none !important;
+}
+
+.button-animation:hover span {
+	transform: translateX(-10px); /* Chữ dịch sang trái */
+	color: #fff; /* Thay đổi màu chữ nếu muốn */
+}
+/* Image box */
+.imagebox-animation {
+	position: relative;
+	display: inline-block;
+	border-radius: 0.4em;
+	overflow: hidden;
+}
+
+.imagebox-animation .box-image {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.imagebox-animation .box-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: opacity 0.3s ease-in-out;
+}
+
+
+/* .imagebox-animation:hover .box-image img {
+	opacity: 0;
+}
+
+.imagebox-animation .box-image {
+	background-image: url('../img/after.svg'); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.imagebox-animation:hover .box-image {
+	background-image: url('../img/after.svg'); 
+	text-decoration: underline;
+}
+ */
+/* From Uiverse.io by cssbuttons-io */
+.button-animation-appear {
+	color: white;
+	font-family: inherit;
+	display: inline-block;
+	height: 2.6em;
+	line-height: 2.5em;
+	margin: 20px;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	transition: color 0.5s, transform 0.3s ease-in-out;
+	z-index: 1;
+	font-size: 17px;
+	border-radius: 6px;
+	font-weight: 500;
+	background: var(--fs-color-primary);
+	padding: 0 20px;
+	text-align: center;
+	border: none;
+}
+
+.button-animation-appear::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	background: white;
+	height: 200%;
+	width: 200%;
+	border-radius: 50%;
+	top: 100%;
+	left: 100%;
+	transition: all 0.7s ease-in-out;
+}
+
+.button-animation-appear:hover {
+	color: var(--fs-color-primary);
+	font-weight: bold;
+	border: 2px solid;
+}
+
+.button-animation-appear:hover::before {
+	top: -50%;
+	left: -50%;
+}
+
+/* Đổi chữ khi hover */
+.button-animation-appear span {
+	display: inline-block;
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.button-animation-appear span:first-child {
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.button-animation-appear:hover span:first-child {
+	transform: translateY(-100%);
+	opacity: 0;
+}
+
+.button-animation-appear:hover span:last-child {
+	transform: translateY(0);
+	opacity: 1;
+	font-weight: bold;
+}
+
+/* Galleyry-animation */
+.galleyry-animation .box-image:hover img {
+	border: 2px dashed white;
+	border-radius: 8px;
+}
+/* PAGE Out work */
+.row-out-animation:hover {
+	background: rgba(249, 255, 241, 1);
+	border: 2px solid var(--primary-color);
+	border-radius: 8px;
+}
+.row-out-animation:hover .text-img-our-work h2 {
+	text-decoration: underline;
+	color: var(--primary-color);
+}
+/* School */
+.img-banner-school {
+	top: 6rem;
+}
+.img-banner-media {
+	top: 13rem;
+}
+.col-img-home-out-core.border .col-inner .box-image {
+	border-radius: 8px;
+}
+.img-banner-indi {
+	top: 10rem;
+}
+.img-banner-events {
+	top: 14rem;
+}
+/* News */
+.image-news .box-text.show-on-hover {
+	bottom: 15%;
+	padding: 0.8em 1em 1em;
+	position: absolute;
+	transition: background 0.3s;
+	z-index: 1;
+	top: 0;
+	height: 100%;
+}
+.image-news .box-text.show-on-hover .height-text {
+	padding-top: 4rem;
+}
+.lastest-news h5 {
+	color: black;
+	height: 110px;
+}
+.lastest-news .is-divider {
+	display: none;
+}
+.lastest-news .box-text.text-left .button {
+	width: 100% !important;
+	border-radius: 99px;
+}
+.lastest-news .col-inner {
+	padding: 6px;
+}
+.lastest-news .col-inner:hover {
+	background: rgba(249, 255, 241, 1);
+	border: 1px solid var(--primary-color);
+	border-radius: 8px;
+}
+.lastest-news .col-inner:hover h5 {
+	color: var(--primary-color);
+	font-size: 16px;
+}
+.lastest-news .col-inner:hover .box-text.text-left .button {
+	background-color: white;
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+}
+.col-edu-hover .col-inner:hover {
+	background: rgba(249, 255, 241, 1);
+	border: 1px solid var(--primary-color);
+	border-radius: 8px;
+	padding: 20px;
+}
+
+/* BUTTON SIMPLE */
+.btn-animation-simple {
+	position: relative;
+	overflow: hidden;
+	background-color: var(--primary-color);
+	transition: background-color 0.3s ease-out;
+}
+.btn-animation-simple span {
+	position: relative;
+
+	transition: background-color 0.3s ease-out;
+	color: white;
+}
+
+/* Tạo lớp nền trước khi hover */
+.btn-animation-simple::before,
+.header-button::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-color: var(--primary-color);
+	transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+	transform: scale(1); /* Ban đầu phủ toàn bộ */
+	opacity: 1;
+}
+
+/* Khi hover: nền thu nhỏ vào tâm rồi biến mất */
+.btn-animation-simple:hover::before {
+	transform: scale(0); /* Thu nhỏ vào tâm */
+	opacity: 0; /* Biến mất */
+}
+
+/* Hiệu ứng màu nền khi hover */
+.btn-animation-simple:hover {
+	background-color: white !important;
+	box-shadow: none !important;
+	border: 2px solid var(--primary-color);
+}
+
+.btn-animation-simple:hover span {
+	color: var(--primary-color) !important;
+}
+
+/* header-button */
+.header-button:hover a {
+	background-color: white !important;
+	box-shadow: none !important;
+	border: 2px solid var(--primary-color);
+}
+.header-button:hover a span {
+	color: var(--primary-color) !important;
+}
+.header-button-1 .header-button:hover::before{
+	    filter: invert(1);
+}
+/* Image box Button */
+.col-img-box-animation {
+	position: relative;
+	overflow: hidden;
+}
+.col-img-box-animation .box-image {
+	border-radius: 20px;
+	background: white;
+}
+
+
+
+.text.imagebox-text-img a {
+	display: none;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+.col-img-box-animation:hover .text.imagebox-text-img {
+	transform: translateX(-61%) translateY(0%);
+
+	left: 52%;
+}
+.col-img-box-animation:hover .text.imagebox-text-img p,
+.col-img-box-animation:hover .text.imagebox-text-img a {
+	display: inline-block;
+	opacity: 1;
+}
+.col-img-box-animation:hover .text.imagebox-text-img a {
+	background:#a47a35 !important;
+	color:white;
+	border:2px solid var(--primary-color);
+}
+/* Khi hover, icon xoay 180 độ */
+
+.col-img-box-animation:hover .box-image::after {
+	transform: translate(-50%, -50%) rotate(209deg);
+}
+.imagebox-img-animation {
+	position: relative;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.imagebox-img-animation::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, rgba(44, 146, 69, 0) 0%, #2C9245 100%);
+	transform: translateX(-100%);
+	transition: transform 0.5s ease-in-out;
+	z-index: 1; /* Giữ overlay dưới chữ */
+	opacity: 1;
+}
+
+.imagebox-img-animation:hover::before {
+	transform: translateX(0);
+}
+.imagebox-img-animation:hover::before a{
+	background:white !important;
+	border:2px solid var(--primarycolor);
+	
+}
+.col-img-box-animation .box-image img {
+   position:relative !important;
+}
+.col-img-box-animation .box-image img::before {
+   content:'';
+	position:absolute;
+	bottom:0;
+	width:30px;  
+	height:30px;
+	background:red;
+}
+
+/*ABOUT US*/
+.text-about-img h1{
+        FONT-SIZE: 40PX;
+}
+
+.text-about-img p{
+       font-size: 25px;
+}
+.img-box-about-us:hover .text-about-img p{
+    color: #ffff00 !important;
+    
+}
+/* OUR WORK*/
+.text-our-work-img h1{
+      FONT-SIZE: 60PX;
+}
+.text-our-work-img p{
+     font-size: 25px;
+}
+.img-box-about-us:hover .text-our-work-img h1{
+    color: #ffff00 !important;
+        font-size: 65px;
+    
+}

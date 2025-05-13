@@ -1,0 +1,293 @@
+/* IMG HOVER */
+
+
+.image-box-text-hover{
+    position: relative;
+
+}
+.image-box-text-hover .box-text.text-center{
+position: absolute;
+z-index: 9999;
+top: 52%;
+}
+.image-box-text-hover.diff .box-text.text-center{
+position: absolute;
+z-index: 9999;
+top: 40%;
+}
+.image-box-text-hover.vertical .box-text.text-center{
+ position: absolute;
+z-index: 9999;
+top: 50%;
+right: -20%;
+transform: translateY(-50%);
+}
+/* Thêm CSS để thay đổi ảnh khi hover */
+.image-box-text-hover .box-image {
+position: relative;
+overflow: hidden;
+}
+.image-box-text-hover .box-image::after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+   background-image: url('../img/2b.png');
+background-size: cover;
+background-position: center;
+opacity: 0;
+transition: opacity 0.3s ease;
+    border-radius: 8px;
+ pointer-events: none; /* Thêm dòng này */
+z-index:9999;
+}
+
+.image-box-text-hover.img2 .box-image::after {
+   background-image: url('../img/3b.png');
+}
+.image-box-text-hover.img3 .box-image::after {
+   background-image: url('../img/4b.png');
+}
+
+.image-box-text-hover.vertical .box-image::after {
+   background-image: url('../img/1bdesk.png');
+}
+.image-box-text-hover.img-mb .box-image::after {
+   background-image: url('../img/1bmobile.png');
+}
+.image-box-text-hover.img0 .box-image::after {
+   background-image: url('../img/1bmobile.png');
+}
+.image-box-text-hover.vertical.img2 .box-image::after {
+   background-image: url('../img/a2-b.png');
+}
+.image-box-text-hover.vertical.img3 .box-image::after {
+   background-image: url('../img/a3-b.png');
+}
+.image-box-text-hover.vertical.img4 .box-image::after {
+   background-image: url('../img/a4-b.png');
+}
+
+
+.image-box-text-hover:hover .box-image::after {
+opacity: 1;
+}
+.image-box-text-hover:hover .box-image img {
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+.text-abs-hover-img h2{
+margin-bottom: 10px ;
+}
+.image-box-text-hover:hover .box-text.text-center .text-abs-hover-img h2 {
+color:#266536 !important;
+}
+.text-abs-hover-img.vertical{
+width: 40%;
+}
+.text-abs-hover-img p{
+ font-size: 16px;
+font-weight: 500;
+font-family: 'Montserrat';
+line-height: 26px;
+}
+.image-box-text-hover:hover .box-text.text-center .text-abs-hover-img p {
+color: #266536 !important;
+font-size: 16px;
+font-weight: 500;
+font-family: 'Montserrat';
+line-height: 26px;
+}
+/* END IMG HOVER */
+
+/*OUR DIFFERENTIATORS*/
+
+
+.image-box-text-hover.img-a .box-image::after {
+   background-image: url('../img/mb2.png');
+}
+.image-box-text-hover.img-b .box-image::after {
+   background-image: url('../img/mb8.png');
+}
+.image-box-text-hover.img-c .box-image::after {
+   background-image: url('../img/mb4.png');
+}
+.image-box-text-hover.img-d .box-image::after {
+   background-image: url('../img/mb10.png');
+}
+.image-box-text-hover.img-e .box-image::after {
+   background-image: url('../img/mb6.png');
+}
+.text-abs-hover-img-rotary h2{
+color:#266536 !important;
+font-size: 20px;
+
+}
+.text-abs-hover-img-rotary p{
+color:#266536 !important;
+font-weight: 500;
+ font-size: 15px !important;
+font-family: 'Montserrat';
+line-height:26px;
+}
+.image-box-text-hover:hover .box-text.text-center .text-abs-hover-img-rotary h2 {
+color: #9BD34A !important;
+font-family: 'Montserrat';
+line-height: 26px;
+}
+.image-box-text-hover:hover .box-text.text-center .text-abs-hover-img-rotary p {
+color: white !important;
+font-weight: 500;
+ font-size: 15px;
+font-family: 'Montserrat';
+line-height: 26px;
+}
+
+
+/*OUR IMPACTS*/
+.image-box-text-hover-impact{
+	    position: relative;
+}
+.image-box-text-hover-impact .box-text.text-center{
+position: absolute;
+z-index: 9999;
+top: 52%;
+}
+.text-abs-hover-img-our{
+width: 90%;
+}
+.text-abs-hover-img-our h2 {
+color:#153B20;
+font-size: 26px;
+
+}
+.image-box-text-hover-impact:hover .box-text.text-center .text-abs-hover-img-our h2 {
+color:#269546 !important;
+    font-size: 30px;
+
+}
+
+.text-abs-hover-img-our p{
+ font-size: 16px;
+font-weight: 500;
+font-family: 'Montserrat';
+line-height: 26px;
+color:black ;
+}
+.image-box-text-hover-impact:hover .box-text.text-center .text-abs-hover-img-our p {
+color: #266536 !important;
+
+}
+
+/*OUR COLLAB*/
+
+.text-abs-hover-img-collab{
+width: 90%;
+}
+.text-abs-hover-img-collab h2{
+    font-size: 36px;
+color: white;
+margin-bottom: 15px;
+}
+.text-abs-hover-img-collab p{
+   color: white;
+font-size: 18px;
+}
+.image-box-text-hover.collab .box-image::after {
+   background-image: url('../img/1-b.png');
+
+}
+.image-box-text-hover.collab.img2 .box-image::after {
+   background-image: url('../img/2-b.png');
+}
+.image-box-text-hover.collab.img3 .box-image::after {
+   background-image: url('../img/3-b.png');
+}
+.image-box-text-hover.collab.img4 .box-image::after {
+   background-image: url('../img/4-b.png');
+}
+.image-box-text-hover.collab:hover .box-text.text-center .text-abs-hover-img-collab h2{
+color: #D1FF65 !important ;
+
+}
+
+.stack-vi-5 .text-abs-hover-img-rotary h2 {
+    color: #266536 !important;
+    font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+.text-abs-hover-img-rotary h2 {
+    color: #266536 !important;
+    font-size: 24px !important;
+           
+}
+ .image-box-text-hover:hover .box-text.text-center .text-abs-hover-img-rotary h2 {
+   color: #9BD34A !important;
+  
+}
+.text-abs-hover-img-rotary p {
+           font-size: 18px !important;
+    line-height: 26px !important;
+}
+.image-box-text-hover:hover .box-text.text-center .text-abs-hover-img-rotary p {
+   color: white !important;
+    font-weight: 500;
+             font-size: 18px !important;
+
+}
+.img-home-mt-mb{
+        margin-top: -1rem;
+}
+.image-box-text-hover.diff .box-text.text-center{
+
+   top: 45%;
+}
+
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.image-box-text-hover.vertical .box-text.text-center {
+    position: absolute;
+    z-index: 9999;
+    top: 20%;
+    right: -20%;
+}
+.text-abs-hover-img.vertical {
+    width: 55%;
+}
+.text-abs-hover-img-rotary h2 {
+    color: #266536 !important;
+    font-size: 14px;
+}
+.text-abs-hover-img-rotary p {
+    display: none;
+}
+
+
+}
+
+/* OUR WORK*/
+
+.image-box-text-hover.img-mb-new .box-image::after {
+   background-image: url('../img/m1-b.png');
+}
+.image-box-text-hover.img-mb-new.img2 .box-image::after {
+   background-image: url('../img/m2-b.png');
+}
+.image-box-text-hover.img-mb-new.img3 .box-image::after {
+   background-image: url('../img/m3-b.png');
+}
+.image-box-text-hover.img-mb-new.img4 .box-image::after {
+   background-image: url('../img/m4-b.png');
+}
+.image-box-text-hover.img-mb-new .box-text.text-center {
+position: absolute;
+z-index: 9999;
+top: 35%;
+transform: scaleY(1.1);
+}
+.text-abs-hover-img.mb{
+width: 85%;
+}
